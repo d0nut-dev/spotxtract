@@ -1,7 +1,9 @@
 #!/usr/bin/env sh
 
 eval "$(ssh-agent -s)"
-ssh-add ~/.ssh/id_ed25519-gitlab
+
+#paste your keys location here v
+ssh-add <location>
 
 git init
 git checkout -B main
